@@ -1,7 +1,11 @@
 aid: beatdapp
 name: Beatdapp
-description: Beatdapp is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Beatdapp is a trust and safety operating system for digital platforms, providing AI-driven
+  fraud detection and content integrity. Originally built to detect streaming fraud in the music industry,
+  its platform now spans anomaly detection, customer due diligence, AI-generated music detection, account
+  takeover detection, and recommendation systems across streaming, gaming, media, and marketplaces. The
+  company reports analyzing 6T+ streams and 65T+ data points, with clients including Universal Music Group,
+  iHeartRadio, Beatport, and SoundExchange. No public API, developer portal, or SDKs are published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/beatdapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +13,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://beatdapp.com/icon.png
 tags:
 - Company
+- Trust and Safety
+- Fraud Detection
+- Music Streaming
+- Anomaly Detection
+- Content Integrity
+- AI Detection
+- Account Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beatdapp-domain-security.yml
 - type: Website
   url: https://beatdapp.com
+- type: Blog
+  url: https://beatdapp.com/blog
+- type: TermsOfService
+  url: https://beatdapp.com/terms
+- type: PrivacyPolicy
+  url: https://beatdapp.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
